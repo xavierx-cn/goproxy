@@ -19,7 +19,7 @@ func main() {
 		},
 		Cacher: goproxy.DirCacher("/data/goproxy"),
 	}
-	if err := http.ListenAndServe("0.0.0.0:8080", proxy); err != nil {
+	if err := http.ListenAndServe("0.0.0.0:8765", proxy); err != nil {
 		panic(err)
 
 	}
