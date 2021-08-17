@@ -8,7 +8,7 @@ FROM alpine:latest
 
 WORKDIR /goproxy
 COPY --from=builder /goproxy .
-EXPOSE 8080
+EXPOSE 8765
 
 CMD ["./goproxy"]
 
